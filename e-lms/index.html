@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">    
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="libraries/css/app.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <title>Mnemosyne University of the Philippines</title>
+</head>
+<body>
+
+    <div class="pre-loader active">
+        <img src="assets/preloader.gif" alt="preloader">
+    </div>
+    <div class="theme-settings position-fixed d-inline-flex justify-content-end align-items-center p-4">
+        <div class="form-check form-switch">
+            <label class="form-check-label" id="labelSwitch">Go to Dark <i class="bi bi-moon-stars-fill"></i></label>
+            <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" />
+        </div>        
+        <div class="arrow-icon p-2">
+            <i class="bi bi-caret-right-fill"></i>
+        </div>
+    </div>
+    <div class="sidebar position-fixed top-0"> 
+        <ul class="list-unstyled">
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link active">
+                    Student Portal
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    About Us
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Contact Us
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Mission and Vision
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Courses Available
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Departments
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Events
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Blogs and Articles
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Footer Links
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="top-nav sticky-top">
+        <div class="site-header-content w-100">
+            <div class="container py-3">
+                <div class="d-block d-md-flex justify-content-between text-center">
+                    <div class="d-none d-md-flex">
+                        <div class="contact-info mx-2">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>
+                                123-456-789
+                            </span>
+                        </div>
+                        <div class="contact-info mx-2">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>
+                                contact@mup.edu.ph
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-inline-flex d-md-flex">
+                        <div class="contact-info mx-3">
+                            <a href="#" class="href">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="contact-info mx-3">
+                            <a href="#">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="contact-info mx-3">
+                            <a href="#">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="contact-info mx-3">
+                            <a href="#">
+                                <i class="bi bi-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg site-navbar py-3">
+            <div class="container justify-content-around">
+                <div class="row w-100 d-flex justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/college-logo.png" alt="logo" class="template-logo">
+                            <span class="logo-text d-none d-md-inline-flex">Mnemosyne University of the Philippines</span>
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center">
+                            <div class="hamburger-wrapper d-flex align-items-center mx-4">
+                                <div class="hamburger"></div>
+                            </div>
+                            <div class="user-actions d-none d-lg-block">
+                                <div class="d-flex align-items-center h-100">
+                                    <div class="mx-1">
+                                        <a href="login.html" class="btn-nav-action" type="button">Student Portal</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="template-main mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="enrolee-details">
+                            <div class="row">
+                                <div class="col-12 mb-2">
+                                    <div class="card border-0 enrol" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="card-header border-0">
+                                            <h6 class="card-title">
+                                                Enrolees
+                                            </h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <h3>30,200</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2">
+                                    <div class="card border-0 transferee" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="card-header border-0">
+                                            <h6 class="card-title">
+                                                Transferees
+                                            </h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <h3>10,200</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2">
+                                    <div class="card border-0 alumni" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="card-header border-0">
+                                            <h6 class="card-title">
+                                                Alumni
+                                            </h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <h3>5,200</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="we-offer">
+                            <div class="row">
+                                <div class="col-12 mb-2">
+                                    <div class="card position-relative border-0" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="offer-details position-relative text-center">
+                                            <i class="bi bi-person-workspace"></i>
+                                            <p>50+ offered courses</p>
+                                            <span>Explore different journeys</span>
+                                        </div>
+                                        <div class="image-offer">
+                                            <img src="assets/courses.jpg" alt="courses" class="position-absolute top-0 w-100 h-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2">
+                                    <div class="card position-relative border-0" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="offer-details position-relative text-center">
+                                            <i class="bi bi-award"></i>
+                                            <p>Expert Professors</p>
+                                            <span>Competetive learning</span>
+                                        </div>
+                                        <div class="image-offer">
+                                            <img src="assets/professor.jpg" alt="courses" class="position-absolute top-0 w-100 h-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2">
+                                    <div class="card position-relative border-0" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="offer-details position-relative text-center">
+                                            <i class="bi bi-laptop"></i>
+                                            <p>Modern way of learning</p>
+                                            <span>Learn wherever you are</span>
+                                        </div>
+                                        <div class="image-offer">
+                                            <img src="assets/modern-learning.jpg" alt="courses" class="position-absolute top-0 w-100 h-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="template-slider" data-aos="fade-up" data-aos-duration="1000">
+                            <video autoplay="true" controls>
+                                <source src="assets/intro.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="about-us mt-3 mb-5" data-aos="fade-up" data-aos-duration="1000"  >
+                            <h2 class="section-title">
+                                Why Us ?
+                            </h2>
+                            <p class="text-detail mt-3">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt id tempore laudantium deserunt odio repellat asperiores! Non obcaecati cum doloremque adipisci amet? Eligendi tenetur iste iusto, eius ipsa provident incidunt!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt enim aperiam accusantium laudantium nihil velit illum consectetur odio fugit eveniet facilis modi, ut assumenda nulla explicabo voluptatibus temporibus libero minus.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima et sed similique, quibusdam iure asperiores fugiat, error dolores repellat, nesciunt quisquam explicabo nisi suscipit sequi cum at blanditiis fugit. Veritatis.
+                            </p>
+                            <div class="tab-content mt-4">
+                                <ul class="nav nav-pills" id="pills-tab">
+                                    <li class="nav-item">
+                                        <button class="nav-link w-100 active" data-bs-toggle="pill" data-bs-target="#pills-mission" type="button">Mission</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link w-100" data-bs-toggle="pill" data-bs-target="#pills-vision" type="button">Vision</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link w-100" data-bs-toggle="pill" data-bs-target="#pills-campuses" type="button">Our Campuses</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content mt-3 mb-3">
+                                    <div class="tab-pane fade show active" id="pills-mission">
+                                        <p class="text-detail">
+                                            Sugar, spice, and everything nice
+                                            These were the ingredients chosen
+                                            To create the perfect little girls
+                                            But Professor Utonium accidentally
+                                            Added an extra ingredients to the concoction--
+                                            Chemical X
+                                            Thus, The Powerpuff Girls were born
+                                            Using their ultra-super powers
+                                            Blossom, Bubbles, and Buttercup
+                                            Have dedicated their lives to fighting crime
+                                            And the forces of evil
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-vision">
+                                        <p class="text-detail">
+                                            Blossom, commander and the leader 
+                                            Bubbles, she is the joy and the laughter 
+                                            Buttercup, she's the toughest fighter 
+                                            Powerpuffs save the day... 
+                                            Fighting crime, trying to save the world 
+                                            Here they come just in time, the Powerpuff Girls 
+                                            Fighting crime, trying to save the world 
+                                            Here they come just in time, the Powerpuff Girls 
+                                            Powerpuff! 
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-campuses">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                                                        Mojo's Lair Campus
+                                                    </button>
+                                                </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Details...</div>
+                                            </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                                                        Midway Campus
+                                                    </button>
+                                                </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Details...</div>
+                                            </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                                                        Utonium Campus
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Details...</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="side-news" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">
+                                        Announcements
+                                    </h5>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="news-container" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="news-writer d-inline-flex align-items-center">
+                                            <div class="avatar">
+                                                <img src="assets/man.png">
+                                            </div>
+                                            <div class="name">
+                                                <h6>Avatar01</h6>
+                                                <p>@writer01</p>
+                                            </div>
+                                        </div>
+                                        <div class="news-details mt-3">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi recusandae obcaecati mollitia id atque architecto animi. Hic maiores animi, distinctio, molestiae dolore eum repellat et error quis ipsum inventore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quo sint sit. Perferendis architecto iure omnis, praesentium aliquam maxime unde doloremque qui? Rem modi animi illo ad, aliquid expedita nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi asperiores doloribus quis iure deleniti nulla aut voluptatum quae illum. Voluptatibus error recusandae odit iure quaerat deleniti animi illo eum.
+                                            </p>
+                                            <span>
+                                                <a href="#" class="view-news">view</a>
+                                            </span>
+                                        </div>
+                                        <div class="news-published">
+                                            <p>2h ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="news-container" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="news-writer d-inline-flex align-items-center">
+                                            <div class="avatar">
+                                                <img src="assets/man.png">
+                                            </div>
+                                            <div class="name">
+                                                <h6>Avatar01</h6>
+                                                <p>@writer01</p>
+                                            </div>
+                                        </div>
+                                        <div class="news-details mt-3">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi recusandae obcaecati mollitia id atque architecto animi. Hic maiores animi, distinctio, molestiae dolore eum repellat et error quis ipsum inventore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quo sint sit. Perferendis architecto iure omnis, praesentium aliquam maxime unde doloremque qui? Rem modi animi illo ad, aliquid expedita nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi asperiores doloribus quis iure deleniti nulla aut voluptatum quae illum. Voluptatibus error recusandae odit iure quaerat deleniti animi illo eum.
+                                            </p>
+                                            <span>
+                                                <a href="#" class="view-news">view</a>
+                                            </span>
+                                        </div>
+                                        <div class="news-published">
+                                            <p>2h ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="news-container" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="news-writer d-inline-flex align-items-center">
+                                            <div class="avatar">
+                                                <img src="assets/man.png">
+                                            </div>
+                                            <div class="name">
+                                                <h6>Avatar01</h6>
+                                                <p>@writer01</p>
+                                            </div>
+                                        </div>
+                                        <div class="news-details mt-3">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi recusandae obcaecati mollitia id atque architecto animi. Hic maiores animi, distinctio, molestiae dolore eum repellat et error quis ipsum inventore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quo sint sit. Perferendis architecto iure omnis, praesentium aliquam maxime unde doloremque qui? Rem modi animi illo ad, aliquid expedita nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi asperiores doloribus quis iure deleniti nulla aut voluptatum quae illum. Voluptatibus error recusandae odit iure quaerat deleniti animi illo eum.
+                                            </p>
+                                            <span>
+                                                <a href="#" class="view-news">view</a>
+                                            </span>
+                                        </div>
+                                        <div class="news-published">
+                                            <p>2h ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="news-container" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="news-writer d-inline-flex align-items-center">
+                                            <div class="avatar">
+                                                <img src="assets/man.png">
+                                            </div>
+                                            <div class="name">
+                                                <h6>Avatar01</h6>
+                                                <p>@writer01</p>
+                                            </div>
+                                        </div>
+                                        <div class="news-details mt-3">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi recusandae obcaecati mollitia id atque architecto animi. Hic maiores animi, distinctio, molestiae dolore eum repellat et error quis ipsum inventore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quo sint sit. Perferendis architecto iure omnis, praesentium aliquam maxime unde doloremque qui? Rem modi animi illo ad, aliquid expedita nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi asperiores doloribus quis iure deleniti nulla aut voluptatum quae illum. Voluptatibus error recusandae odit iure quaerat deleniti animi illo eum.
+                                            </p>
+                                            <span>
+                                                <a href="#" class="view-news">view</a>
+                                            </span>
+                                        </div>
+                                        <div class="news-published">
+                                            <p>2h ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer mt-2 border-0">
+                                    <a href="#" class="view-more">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-find-course mt-5 mt-md-0 d-flex justify-content-center text-center">
+            <div class="d-block">
+                <h2 class="text-detail text-center">Courses Available</h2>
+                <select class="form-select mt-3" aria-label="Default select example">
+                    <option selected>Find your course here</option>
+                    <option disabled value="Bachelor of Arts in English, Political Science, Psychology & History">Bachelor of Arts in English, Political Science, Psychology & History</option>
+                    <option disabled value="Bachelor of Science in Accountancy">Bachelor of Science in Accountancy</option>
+                    <option disabled value="Bachelor of Performing Arts (Dance)">Bachelor of Performing Arts (Dance)</option>
+                    <option disabled value="Bachelor of Science in Criminology">Bachelor of Science in Criminology</option>
+                    <option disabled value="Bachelor of Science in Computer Science">Bachelor of Science in Computer Science</option>
+                    <option disabled value="Bachelor of Science in Business Administration">Bachelor of Science in Business Administration</option>
+                    <option disabled value="Bachelor of Elementary Education">Bachelor of Elementary Education</option>
+                    <option disabled value="Bachelor of Secondary Education">Bachelor of Secondary Education</option>
+                    <option disabled value="Bachelor of Physical Education - Sports & Wellness Management">Bachelor of Physical Education - Sports & Wellness Management</option>
+                    <option disabled value="Bachelor of Science in Nursing">Bachelor of Science in Nursing</option>
+                    <option disabled value="Bachelor of Science in Hospitality Management">Bachelor of Science in Hospitality Management</option>
+                    <option disabled value="Bachelor of Science in Tourism Management">Bachelor of Science in Tourism Management</option>
+                </select>
+            </div>
+        </div>
+        <div class="template-banner mt-5">
+            <div class="image-banner">
+                <img src="assets/bg.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="image-banner-text d-flex justify-content-center text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container">
+                        <h1>Find your right path with us</h1>
+                        <h5>Fulfill our goal to produce professionals like you</h5>
+                        <button type="button" class="get-started">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-department mt-5">
+            <div class="container">
+                <div class="department-content">
+                    <h3>Mnemosyne University</h3>
+                    <h1>Departments</h1>
+                </div>
+                <div class="d-block d-md-flex gap-3">
+                    <ul class="nav nav-pills mb-3 d-block pills-department mt-5 gap-2" id="pills-tab">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-bursar" type="button">Bursar</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-registrar" type="button">Registrar</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-it" type="button">Information Technology</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content w-100 gap-2" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="tab-pane fade show active" id="pills-bursar">
+                            <div class="department-image">
+                                <img src="assets/bursar.jpg" alt="bursar">
+                                <div data-aos="fade-left">
+                                    <div class="overlay-div-1">BURSAR</div>
+                                    <div class="overlay-div-2"></div>
+                                    <div class="overlay-div-3"></div>
+                                </div>
+                            </div>
+                            <div class="department-info mt-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam odio qui facilis vel asperiores nobis, fuga adipisci nemo voluptatum soluta corporis dignissimos harum reiciendis odit, autem molestias, inventore veniam!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum voluptatum tempore consequatur quas aliquid, culpa, libero fuga quisquam atque laboriosam perspiciatis mollitia impedit sapiente nobis eos similique praesentium. Tempore!
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-registrar">
+                            <div class="department-image">
+                                <img src="assets/registrar.jpg" alt="registrar">
+                                <div data-aos="fade-left">
+                                    <div class="overlay-div-1">Registrar</div>
+                                    <div class="overlay-div-2"></div>
+                                    <div class="overlay-div-3"></div>
+                                </div>
+                            </div>
+                            <div class="department-info mt-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam odio qui facilis vel asperiores nobis, fuga adipisci nemo voluptatum soluta corporis dignissimos harum reiciendis odit, autem molestias, inventore veniam!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum voluptatum tempore consequatur quas aliquid, culpa, libero fuga quisquam atque laboriosam perspiciatis mollitia impedit sapiente nobis eos similique praesentium. Tempore!
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-it">
+                            <div class="department-image">
+                                <img src="assets/it.jpg" alt="it">
+                                <div data-aos="fade-left">
+                                    <div class="overlay-div-1">Information Technology</div>
+                                    <div class="overlay-div-2"></div>
+                                    <div class="overlay-div-3"></div>
+                                </div>
+                               
+                            </div>
+                            <div class="department-info mt-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam odio qui facilis vel asperiores nobis, fuga adipisci nemo voluptatum soluta corporis dignissimos harum reiciendis odit, autem molestias, inventore veniam!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum voluptatum tempore consequatur quas aliquid, culpa, libero fuga quisquam atque laboriosam perspiciatis mollitia impedit sapiente nobis eos similique praesentium. Tempore!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="opac-ttle" data-aos="fade-right">
+                    <h1>DEPARTMENTS</h1>
+                </div>
+            </div>
+        </div>
+        <div class="upcoming-events mt-5">
+            <div class="image-banner">
+                <img src="assets/events.jpg" class="image-bg" alt="">
+                <div class="overlay"></div>
+                <div class="image-banner-text p-5">
+                    <div class="">
+                    <h2>Upcoming</h2>
+                    <h1>Events</h1>
+                    <div class="row mt-5">
+                        <div class="col-12 col-md-4 p-0 p-lg-2">
+                            <div class="card border-0 mb-3" data-aos="fade-up">
+                                <img src="assets/meeting.jpg" alt="enrolment">
+                                <div class="event-date" style="background-color: #f75c40">
+                                    <h3>10</h3>
+                                    <h6>Sep</h6>
+                                </div>
+                                <div class="event-ttle">
+                                    College Orientation
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 p-0 p-lg-2">
+                            <div class="card border-0 mb-3" data-aos="fade-up" >
+                                <img src="assets/seminar.jpg" alt="enrolment">
+                                <div class="event-date" style="background-color: #ff8926">
+                                    <h3>12</h3>
+                                    <h6>Oct</h6>
+                                </div>
+                                <div class="event-ttle">
+                                    Mental Health Seminar
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 p-0 p-lg-2">
+                            <div class="card border-0 mb-3" data-aos="fade-up">
+                                <img src="assets/collaboration.jpg" alt="enrolment">
+                                <div class="event-date" style="background-color: #2d68e0">
+                                    <h3>5</h3>
+                                    <h6>Oct</h6>
+                                </div>
+                                <div class="event-ttle">
+                                    Hackathon
+                                </div>
+                            </div>
+                        </div>
+                        <div class="see-more-events text-center mt-5">
+                            <button type="button">See More Events</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="template-blogs mt-5">
+            <div class="container">
+                <h1>Blogs and Articles</h1>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-4">
+                        <div class="card mb-3" data-aos="fade-up">
+                            <img src="assets/research.jpg" class="blog-images" alt="blogs">
+                            <div class="card-body">
+                                <h5 class="card-title">GCT05 Research Approved</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis voluptates voluptatum quo, hic reprehenderit minus dolor fugiat repellat autem dolorem ullam earum labore corporis facilis, optio aliquid inventore. Molestias?</p>
+                                <a href="#" class="read-blog">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card mb-3" data-aos="fade-up">
+                            <img src="assets/laboratory.jpg" class="blog-images" alt="blogs">
+                            <div class="card-body">
+                                <h5 class="card-title">Extended Lab Facilities</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis voluptates voluptatum quo, hic reprehenderit minus dolor fugiat repellat autem dolorem ullam earum labore corporis facilis, optio aliquid inventore. Molestias?</p>
+                                <a href="#" class="read-blog">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card mb-3" data-aos="fade-up">
+                            <img src="assets/library.jpg" class="blog-images" alt="blogs">
+                            <div class="card-body">
+                                <h5 class="card-title">100+ Books Donated</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis voluptates voluptatum quo, hic reprehenderit minus dolor fugiat repellat autem dolorem ullam earum labore corporis facilis, optio aliquid inventore. Molestias?</p>
+                                <a href="#" class="read-blog">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-footer mt-5 pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-logo d-inline-flex align-items-center mb-4">
+                        <img src="assets/college-logo.png" alt="logo">
+                        <div class="logo-name">
+                            <h5>Mnemosyne University of the Philippines</h5>
+                            <div class="logo-addr">
+                                <p>Ipo Building351 Sen Gil J Puyat Avenue1200, Makati City</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-12 col-md-3">
+                        <div class="footer-ttle">
+                            <h5 class="footer-link-head">MUP Links</h5>
+                            <ul class="list-unstyled">
+                                <li class="list-unstyled-item">
+                                    <a href="#" class="footer-links">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="list-unstyled-item">
+                                    <a href="#" class="footer-links">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li class="list-unstyled-item">
+                                    <a href="#" class="footer-links">
+                                        Mission and Vision
+                                    </a>
+                                </li>
+                                <li class="list-unstyled-item">
+                                    <a href="#" class="footer-links">
+                                        Courses Available
+                                    </a>
+                                </li>
+                                <li class="list-unstyled-item">
+                                    <a href="#" class="footer-links">
+                                        Departments
+                                    </a>
+                                </li>
+                                <li class="list-unstyled-item">
+                                    <a href="#" class="footer-links">
+                                        Events
+                                    </a>
+                                </li>
+                                <li class="list-unstyled-item">
+                                    <a href="#" class="footer-links">
+                                        Blogs and Articles
+                                    </a>
+                                </li>
+                                <li class="list-unstyled-item">
+                                    <a href="#" class="footer-links">
+                                        Terms and Conditions
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h5 class="footer-link-head">Student</h5>
+                        <ul class="list-unstyled">
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Student Portal
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Admissions
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Concerns
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Reports
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Terms and Conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3">
+                       <h5 class="footer-link-head">Social Media Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    <i class="bi bi-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    <i class="bi bi-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    <i class="bi bi-twitter"></i>
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    <i class="bi bi-google"></i>
+                                    Google
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    <i class="bi bi-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h5 class="footer-link-head">Concerns?</h5>
+                        <form action="#" method="post">
+                            <input type="text" name="name" id="name" class="form-control mt-2" placeholder="Your Name" autocomplete="disabled">
+                            <input type="email" name="email" id="email" class="form-control mt-2" placeholder="Your Email" autocomplete="disabled">
+                            <textarea name="message" id="message" class="form-control mt-2" placeholder="Your Message" autocomplete="disabled"></textarea>
+                            <button type="button" class="send-message mt-3">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- JQUERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<!-- BOOTSTRAP 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- CUSTOM JS -->
+<script src="libraries/js/app.js"></script>
+</html>

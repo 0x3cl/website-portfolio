@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#fff">
+    <title>Find Job | JobHound</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#interview-tips">Interview Tips</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="find-job.html">Find a Job</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="post-job.html">Post a Job</a>
+            </li>
+            <li class=" ms-auto d-flex justify-content-center gap-2 mt-5">
+                <button type="button" class="btn-signin" data-bs-toggle="modal" data-bs-target="#sampleModal">Sign In</button>
+                <button type="button" class="btn-signup" data-bs-toggle="modal" data-bs-target="#sampleModal">Sign Up</button>
+            </li>
+        </ul>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top py-4">
+         <div class="container justify-content-around">
+            <div class="row w-100 d-flex justify-content-between align-items-center">
+                <div class="col-auto">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <div class="d-flex align-items-center">
+                        <div class="hamburger-wrapper d-flex align-items-center mx-4">
+                            <div class="hamburger"></div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="find-job">
+        <div class="container">
+            <h1 class="mt-5 mb-3 text-center">Start <span class="text-overlay">Finding Jobs!</span></h1>
+            <div class="row mt-5">
+                <div class="col-12 col-md-5 filter-search">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text px-3 py-3">
+                            Looking For
+                        </span>
+                        <input type="text" class="form-control" placeholder="Job Title, Position, Company, Keyword">
+                        <span class="input-group-text px-4">
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text px-3 py-3">
+                            Courses
+                        </span>
+                        <input type="text" class="form-control" placeholder="BS Computer Science, BS Information Technology">
+                        <span class="input-group-text px-4">
+                            <i class="bi bi-mortarboard"></i>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <select class="form-select form-select mb-3">
+                                <option selected>Date Posted</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select form-select mb-3">
+                                <option selected>Salary</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select form-select mb-3">
+                                <option selected>Education</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select form-select mb-3">
+                                <option selected>Job Type</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select form-select mb-3">
+                                <option selected>Experience Level</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select form-select mb-3">
+                                <option selected>Work Mode</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                       <div class="col-12 col-md-6">
+                        <button type="button" class="btn-search-job">
+                            Search
+                        </button>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="sort-by mb-2">
+                            <small>All Jobs Posted</small>
+                            <br/>
+                            <small>Sort by: Date</small>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header py-3 border-0">
+                                    <div class="job-description">
+                                        <p>Job Title: <span class="job-title">UI Designer</span></p>
+                                        <p>Company: <span class="job-company">Credelite</span></p>
+                                        <p>Location: <span class="job-location"> Aguirre Avenue, BF Homes Paranaque City</span></p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Work closely with UX in order to create features that are easy to use, user friendly and that follows our UI guidelines.</li>
+                                        <li>Translating low fidelity wireframes into fully realised high fidelity mock-ups that can be used as a guide for the engineers and testing.</li>
+                                    </ul>
+                                    <div class="controls">
+                                        <button type="button" class="btn-view-job"  data-bs-toggle="modal" data-bs-target="#sampleModal">Full Details</button>
+                                    </div>
+                                </div>
+                                <div class="card-footer border-0">
+                                    <small>Posted 3 days ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header py-3 border-0">
+                                    <div class="job-description">
+                                        <p>Job Title: <span class="job-title">UX UI Designer</span></p>
+                                        <p>Company: <span class="job-company">Zndio</span></p>
+                                        <p>Location: <span class="job-location">600 Boni Avenue Mandaluyong City</span></p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Identifying design challenges and devise intuitive solutions to enhance user experience</li>
+                                        <li>Conducting user research through interviews, observations and other research methods in order to define user personas, user journeys, and business processes/workflows</li>
+                                        </ul>
+                                    <div class="controls">
+                                        <button type="button" class="btn-view-job">Full Details</button>
+                                    </div>
+                                </div>
+                                <div class="card-footer border-0">
+                                    <small>Posted 5 days ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header py-3 border-0">
+                                    <div class="job-description">
+                                        <p>Job Title: <span class="job-title">Sr. UI/UX Designer</span></p>
+                                        <p>Company: <span class="job-company">Arteo Inc.</span></p>
+                                        <p>Location: <span class="job-location">Robles Building, Gonzales Compound, Almanza Las Pinas</span></p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Creating user-centered designs by understanding business requirements, and user feedback</li>
+                                        <li>Creating user flows, wireframes, prototypes, and mockups</li>
+                                        <li>Translating requirements into style guides, design systems, design patterns and attractive user interfaces</li>
+                                    </ul>
+                                    <div class="controls">
+                                        <button type="button" class="btn-view-job">Full Details</button>
+                                    </div>
+                                </div>
+                                <div class="card-footer border-0">
+                                    <small>Posted 6 days ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header py-3 border-0">
+                                    <div class="job-description">
+                                        <p>Job Title: <span class="job-title">UI Visual Designer</span></p>
+                                        <p>Company: <span class="job-company">PHOEXCHANGE</span></p>
+                                        <p>Location: <span class="job-location">Metropoint Mall, EDSA Corner Taft Avenue Pasay City</span></p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Assist with user research efforts to identify potential target users and their needs.</li>
+                                        <li>Be the voice of the user. Listen to users and understand their pain points to identify the best strategies and solutions to improve the overall experience for them.</li>
+                                        </ul>
+                                    <div class="controls">
+                                        <button type="button" class="btn-view-job">Full Details</button>
+                                    </div>
+                                </div>
+                                <div class="card-footer border-0">
+                                    <small>Posted 5 days ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer mt-5 pb-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12 col-md-4">
+                    <div class="footer-ttle">
+                        <h5 class="footer-link-head">JobHound Links</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#about-us" class="footer-links">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#interview-tips" class="footer-links">
+                                    Interview Tips
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="find-job.html" class="footer-links">
+                                    Find a Job
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="post-job.html" class="footer-links">
+                                    Post a Job
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                   <h5 class="footer-link-head">Social Media Links</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-instagram"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-twitter"></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-google"></i>
+                                Google
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-youtube"></i>
+                                Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5 class="footer-link-head">Concerns?</h5>
+                    <form action="#" method="post">
+                        <input type="text" name="name" id="name" class="form-control mt-2" placeholder="Your Name" autocomplete="disabled">
+                        <input type="email" name="email" id="email" class="form-control mt-2" placeholder="Your Email" autocomplete="disabled">
+                        <textarea name="message" id="message" class="form-control mt-2" placeholder="Your Message" autocomplete="disabled"></textarea>
+                        <button type="button" class="send-message mt-3">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- example modal -->
+
+    <div class="modal fade full-job-details" id="sampleModal" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header d-block">
+                    <h3 class="mb-1">UI Designer</h3>
+                    <h6>Credelite</h6>
+                    <h6>Aguirre Avenue, BF Homes Paranaque City</h6>
+                    <h6>₱50,000 - ₱80,000</h6>
+                    <small class="text-muted d-block mt-2">You must create a jobhound account before applying</small>
+                    <button type="button" class="btn-apply">Apply</button>
+                    <div class="close-modal">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h5>Job Details</h5>
+                    <div class="salary-details mt-3">
+                        <p>Salary</p>
+                        <small>₱50,000 - ₱80,000</small>
+                    </div>
+                    <div class="job-type mt-3">
+                        <p>Job type</p>
+                        <small>Full-time, Part-time, Internship, Remote</small>
+                    </div>
+                    <div class="job-roles mt-3">
+                        <p>Roles and Responsibilities</p>
+                        <small>
+                            Our society is facing an infodemic crisis. Today’s leading platforms were built to amplify popularity and are ill-equipped to uphold objective scrutiny and rational discourse. We can change that.
+                        </small>
+                    </div>
+                    <hr>
+                    <div class="job-about mt-3">
+                        <p>About Us</p>
+                        <small>
+                            We are an early stage stealth startup committed to restoring the trustworthiness of information on the web. Backed by experienced entrepreneurs, designers, engineers, and data scientists, our platform combines novel approaches in machine learning, mechanism design, and behavioral design to augment human intelligence and enable real-time collaborative sourcing, organization, peer review, and verification of information at scale.
+                            We are a fully distributed team spanning North America, Europe, and Asia with our tech team based mostly in Singapore. Our team members hail from NTU, NUS, Stanford, and other top institutions.
+                        </small>
+                    </div>
+                    <div class="job-description mt-3">
+                        <p>Description</p>
+                        <small>
+                            We are looking for a Product Designer with a passion for taking on complex problems to create simple, elegant solutions. You will collaborate with other designers and engineers to identify new opportunities, improve features, and assist in laying the foundations of design for our first product, all while anticipating users’ needs and advocating for them.
+                        </small>
+                    </div>
+                    <div class="job-responsibilities mt-3">
+                        <p>Responsibilities</p>
+                        <ul>
+                            <li>Assist with user research efforts to identify potential target users and their needs.</li>
+                            <li>Be the voice of the user. Listen to users and understand their pain points to identify the best strategies and solutions to improve the overall experience for them.</li>
+                            <li>Brainstorm new concepts and produce wireframes and prototypes at appropriate levels of fidelity for demonstration.</li>
+                            <li>Assist with user testing planning and execution. Validate concepts with users and incorporate their feedback into new design iterations.</li>
+                            <li>Produce high-fidelity mockups and design assets for implementation that elegantly solve design problems and adhere to established visual design language and brand guidelines.</li>
+                            <li>Raise the bar for UX/UI design excellence and help implement design best practices.</li>
+                        </ul>
+                    </div>
+                    <div class="job-qualifications mt-3">
+                        <p>Qualifications</p>
+                        <ul>
+                            <li>Strong interaction design fundamentals and ability to execute in a fast-paced environment.</li>
+                            <li>Experience developing wireframes, user flows, prototypes, etc.</li>
+                            <li>Passion for design and building great products.</li>
+                            <li>Proficiency with design tools e.g. Figma, Sketch, Illustrator, Photoshop</li>
+                            <li>Detail-oriented. You take pride in your craft and sweat the details.</li>
+                            <li>Excellent communication skills. You should be able to justify design decisions and give and receive constructive feedback.</li>
+                            <li>Flexible and adaptive to change in a startup environment.</li>
+                            <li>Collaborative mindset. You work well in cross-functional teams.</li>
+                            <li>Empathy for users. You are able to identify user pain points and pinpoint existing issues.</li>
+                            <li>Bonus points for interest/experience in UX copywriting, branding, and designing marketing collateral (e.g. email).</li>
+                        </ul>   
+                    </div>
+                    <hr>
+                    <div class="job-note mt-3">
+                        <small>
+                            To apply, please include a link to your portfolio with examples of recent design work showcasing your process and a short blurb on why you are interested in this role.
+                        </small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                   <small>Posted 3 days ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- JQUERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<!-- BS5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- CUSTOM JS -->
+<script src="assets/js/app.js"></script>
+</html>

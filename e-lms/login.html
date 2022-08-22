@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">    
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="libraries/css/app.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <title>Mnemosyne University of the Philippines</title>
+</head>
+<body>
+
+    <div class="pre-loader active">
+        <img src="assets/preloader.gif" alt="preloader">
+    </div>
+    <div class="theme-settings position-fixed d-inline-flex justify-content-end align-items-center p-4">
+        <div class="form-check form-switch">
+            <label class="form-check-label" id="labelSwitch">Go to Dark <i class="bi bi-moon-stars-fill"></i></label>
+            <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" />
+        </div>        
+        <div class="arrow-icon p-2">
+            <i class="bi bi-caret-right-fill"></i>
+        </div>
+    </div>
+    <div class="sidebar position-fixed top-0"> 
+        <ul class="list-unstyled">
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link active">
+                    Student Portal
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    About Us
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Contact Us
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Mission and Vision
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Courses Available
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Departments
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Events
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Blogs and Articles
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="#" class="nav-link">
+                    Footer Links
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="top-nav sticky-top">
+        <div class="site-header-content w-100">
+            <div class="container py-3">
+                <div class="d-block d-md-flex justify-content-between text-center">
+                    <div class="d-none d-md-flex">
+                        <div class="contact-info mx-2">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>
+                                123-456-789
+                            </span>
+                        </div>
+                        <div class="contact-info mx-2">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>
+                                contact@mup.edu.ph
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-inline-flex d-md-flex">
+                        <div class="contact-info mx-3">
+                            <i class="bi bi-facebook"></i>
+                        </div>
+                        <div class="contact-info mx-3">
+                            <i class="bi bi-twitter"></i>
+                        </div>
+                        <div class="contact-info mx-3">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                        <div class="contact-info mx-3">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg site-navbar py-3">
+            <div class="container justify-content-around">
+                <div class="row w-100 d-flex justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/college-logo.png" alt="logo" class="template-logo">
+                            <span class="logo-text d-none d-md-inline-flex">Mnemosyne University of the Philippines</span>
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center">
+                            <div class="hamburger-wrapper d-flex align-items-center mx-4">
+                                <div class="hamburger"></div>
+                            </div>
+                            <div class="user-actions d-none d-lg-block">
+                                <div class="d-flex align-items-center h-100">
+                                    <div class="mx-1">
+                                        <a href="index.html" class="btn-nav-action" type="button">Return Home</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="portal-content">
+        <div class="container">
+            <div class="d-inline-flex gap-2">
+                <h3>Student</h3>
+                <h3 class="overlay" data-aos="zoom-in">Portal</h3>
+            </div>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input type="text" name="username" id="username" class="form-control" placeholder="username" autocomplete="disabled">
+                    <label for="username" class="form-label">Username</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="password" autocomplete="disabled">
+                    <label for="password" class="form-label">Password</label>
+                </div>
+                <button type="submit" class="signin-portal">Sign In</button>
+            </form>
+        </div>
+    </div>
+    <div class="about-portal pt-3 pb-5 mb-5">
+        <div class="container">
+            <div class="row mt-5" data-aos="fade-up">
+                <div class="col-md-4">
+                    <div class="card border-5 rounded-0 mb-3">
+                        <div class="card-header border-0">
+                            <h5 class="card-title p-2">
+                                Scholarships
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita et accusamus tempore voluptatem, tenetur, veniam quis eos, provident officia commodi id odio consequuntur aliquid nesciunt eligendi excepturi illo ducimus aut.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-5 rounded-0 mb-3">
+                        <div class="card-header border-0">
+                            <h5 class="card-title p-2">
+                                LMS
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita et accusamus tempore voluptatem, tenetur, veniam quis eos, provident officia commodi id odio consequuntur aliquid nesciunt eligendi excepturi illo ducimus aut.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-5 rounded-0 mb-3">
+                        <div class="card-header border-0">
+                            <h5 class="card-title p-2">
+                                Request Documents
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita et accusamus tempore voluptatem, tenetur, veniam quis eos, provident officia commodi id odio consequuntur aliquid nesciunt eligendi excepturi illo ducimus aut.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="template-footer mt-5 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="footer-logo d-inline-flex align-items-center mb-4">
+                    <img src="assets/college-logo.png" alt="logo">
+                    <div class="logo-name">
+                        <h5>Mnemosyne University of the Philippines</h5>
+                        <div class="logo-addr">
+                            <p>Ipo Building351 Sen Gil J Puyat Avenue1200, Makati City</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-12 col-md-3">
+                    <div class="footer-ttle">
+                        <h5 class="footer-link-head">MUP Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Mission and Vision
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Courses Available
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Departments
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Events
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Blogs and Articles
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Terms and Conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5 class="footer-link-head">Student</h5>
+                    <ul class="list-unstyled">
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                Student Portal
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                Admissions
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                Concerns
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                Reports
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                Terms and Conditions
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                   <h5 class="footer-link-head">Social Media Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-instagram"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-twitter"></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-google"></i>
+                                Google
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-youtube"></i>
+                                Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5 class="footer-link-head">Concerns?</h5>
+                    <form action="#" method="post">
+                        <input type="text" name="name" id="name" class="form-control mt-2" placeholder="Your Name" autocomplete="disabled">
+                        <input type="email" name="email" id="email" class="form-control mt-2" placeholder="Your Email" autocomplete="disabled">
+                        <textarea name="message" id="message" class="form-control mt-2" placeholder="Your Message" autocomplete="disabled"></textarea>
+                        <button type="button" class="send-message mt-3">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body> 
+<!-- JQUERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<!-- BOOTSTRAP 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- CUSTOM JS -->
+<script src="libraries/js/app.js"></script>
+</html>

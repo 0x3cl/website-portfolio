@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#fff">
+    <title>JobHound</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#interview-tips">Interview Tips</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="find-job.html">Find a Job</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="post-job.html">Post a Job</a>
+            </li>
+            <li class=" ms-auto d-flex justify-content-center gap-2 mt-5">
+                <button type="button" class="btn-signin" data-bs-toggle="modal" data-bs-target="#sampleModal">Sign In</button>
+                <button type="button" class="btn-signup" data-bs-toggle="modal" data-bs-target="#sampleModal">Sign Up</button>
+            </li>
+        </ul>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top py-4">
+         <div class="container justify-content-around">
+            <div class="row w-100 d-flex justify-content-between align-items-center">
+                <div class="col-auto">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <div class="d-flex align-items-center">
+                        <div class="hamburger-wrapper d-flex align-items-center mx-4">
+                            <div class="hamburger"></div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="post-job mt-5">
+        <div class="container">
+            <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-add-job" type="button" role="tab">Add Job</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-view-jobs" type="button" role="tab">View Jobs Created</button>
+                  </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-view-applicants" type="button" role="tab">Applicants</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-view-hired" type="button" role="tab">Hired Applicants</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-account" type="button" role="tab">Account</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-add-job" role="tabpanel">
+                    <hr>
+                    <div class="row">
+                        <h3 class="mt-2 mb-3">Company Informations</h3>
+                        <div class="col-12 col-md-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text px-3 py-3">
+                                    Company
+                                </span>
+                                <input type="text" class="form-control" placeholder="eg. XYZ inc.">
+                                <span class="input-group-text px-4">
+                                    <i class="bi bi-briefcase-fill"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text px-3 py-3">
+                                    Job Type
+                                </span>
+                                <input type="text" class="form-control" placeholder="eg. XYZ inc.">
+                                <span class="input-group-text px-4">
+                                    <i class="bi bi-person-workspace"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text px-3 py-3">
+                                    Category
+                                </span>
+                                <input type="text" class="form-control" placeholder="eg. XYZ inc.">
+                                <span class="input-group-text px-4">
+                                    <i class="bi bi-gear-fill"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text px-3 py-3">
+                                    Job Title
+                                </span>
+                                <input type="text" class="form-control" placeholder="eg. XYZ inc.">
+                                <span class="input-group-text px-4">
+                                    <i class="bi bi-person-badge-fill"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text px-3 py-3">
+                                    Salary Amount
+                                </span>
+                                <input type="text" class="form-control" placeholder="eg. XYZ inc.">
+                                <span class="input-group-text px-4">
+                                    <i class="bi bi-cash-coin"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text px-3 py-3">
+                                    Address
+                                </span>
+                                <input type="text" class="form-control" placeholder="eg. XYZ inc.">
+                                <span class="input-group-text px-4">
+                                    <i class="bi bi-pin-map-fill"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <select class="form-select form-select mb-3 py-2">
+                                <option selected>Philippines</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <select class="form-select form-select mb-3 py-2">
+                                <option selected>City / State</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <select class="form-select form-select mb-3 py-2">
+                                <option selected>Barangay</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <p class="mt-2 mb-2">About the company</p>
+                            <textarea name="roles" id="roles" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <h3 class="mt-2 mb-2">Job Informations</h3>
+                        <div class="col-12 col-md-6">
+                            <p class="mt-2 mb-2">Roles</p>
+                            <textarea name="roles" id="roles" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p class="mt-2 mb-2">Job Description</p>
+                            <textarea name="roles" id="roles" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <p class="mt-2 mb-2">Responsibilities</p>
+                            <textarea name="roles" id="roles" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <p class="mt-2 mb-2">Qualifications</p> 
+                            <textarea name="roles" id="roles" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <p class="mt-2 mb-2">Notes</p> 
+                            <textarea name="roles" id="roles" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <p class="mt-2 mb-2">Upload CV</p> 
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-primary mt-5">
+                            Post Job
+                        </button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-view-jobs" role="tabpanel">
+                    <hr>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="table-bg">
+                              <tr>
+                                <th scope="col">Job ID</th>
+                                <th scope="col">Job Title</th>
+                                <th scope="col">Date Posted</th>
+                                <th scope="col">Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                              <tr>
+                                <th scope="row">JH1001</th>
+                                <td>UI Designer</td>
+                                <td>July 10, 2022</td>
+                                <td>
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-eye-fill"></i> View</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-trash-fill"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">JH1002</th>
+                                <td>UX UI Designer</td>
+                                <td>August 04, 2022</td>
+                                <td>
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-eye-fill"></i> View</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-trash-fill"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">JH1003</th>
+                                <td>Sr. UI/UX Designer</td>
+                                <td>July 20, 2022</td>
+                                <td>
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-eye-fill"></i> View</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-trash-fill"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-view-applicants" role="tabpanel">
+                    <hr>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="table-bg">
+                              <tr>
+                                <th scope="col">Full Name</th>
+                                <th scope="col">Applying For</th>
+                                <th scope="col">Date Applied</th>
+                                <th scope="col">CV</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                              <tr>
+                                <th scope="row">Juan Dela Cruz</th>
+                                <td>UI Designer</td>
+                                <td>July 10, 2022</td>
+                                <td>
+                                    <i class="bi bi-filetype-pdf"></i> Download
+                                </td>
+                                <td>
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-eye-fill"></i> View</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-trash-fill"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Dominador De Leon</th>
+                                <td>UX UI Designer</td>
+                                <td>August 04, 2022</td>
+                                <td>
+                                    <i class="bi bi-filetype-pdf"></i> Download
+                                </td>
+                                <td>
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-eye-fill"></i> View</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-trash-fill"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Ricardo Dalisay</th>
+                                <td>Sr. UI/UX Designer</td>
+                                <td>July 20, 2022</td>
+                                <td>
+                                    <i class="bi bi-filetype-pdf"></i> Download
+                                </td>
+                                <td>
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-eye-fill"></i> View</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-trash-fill"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-view-hired" role="tabpanel">
+                    <hr>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="table-bg">
+                              <tr>
+                                <th scope="col">Full Name</th>
+                                <th scope="col">Applying For</th>
+                                <th scope="col">Date Applied</th>
+                                <th scope="col">Date Hired</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                              <tr>
+                                <th scope="row">Juan Dela Cruz</th>
+                                <td>UI Designer</td>
+                                <td>July 10, 2022</td>
+                                <td>
+                                    August 11, 2022
+                                </td>
+                                <td>
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-eye-fill"></i> View</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-trash-fill"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Dominador De Leon</th>
+                                <td>UX UI Designer</td>
+                                <td>August 04, 2022</td>
+                                <td>
+                                    September 10, 2022
+                                </td>
+                                <td>
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-eye-fill"></i> View</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-trash-fill"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Ricardo Dalisay</th>
+                                <td>Sr. UI/UX Designer</td>
+                                <td>July 20, 2022</td>
+                                <td>
+                                    September 02, 2022
+                                </td>
+                                <td>
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-eye-fill"></i> View</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-trash-fill"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-account" role="tabpanel">
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text px-3 py-3">
+                                    Full Name
+                                </span>
+                                <input type="text" class="form-control" placeholder="eg. XYZ inc." value="John Doe" disabled>
+                                <span class="input-group-text px-4">
+                                    <i class="bi bi-person-bounding-box"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text px-3 py-3">
+                                    Username
+                                </span>
+                                <input type="text" class="form-control" placeholder="eg. XYZ inc." value="johndoe02" disabled>
+                                <span class="input-group-text px-4">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text px-3 py-3">
+                                    Email
+                                </span>
+                                <input type="text" class="form-control" placeholder="eg. XYZ inc." value="johndoe@email.com" disabled>
+                                <span class="input-group-text px-4">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text px-3 py-3">
+                                    Personal Address
+                                </span>
+                                <input type="text" class="form-control" placeholder="eg. XYZ inc." value="lorem ipsum philippines" disabled>
+                                <span class="input-group-text px-4">
+                                    <i class="bi bi-pin-map-fill"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text px-3 py-3">
+                                    Company
+                                </span>
+                                <input type="text" class="form-control" placeholder="eg. XYZ inc." value="XYZ inc." disabled>
+                                <span class="input-group-text px-4">
+                                    <i class="bi bi-briefcase-fill"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary">
+                        Edit
+                    </button>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="footer mt-5 pb-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12 col-md-4">
+                    <div class="footer-ttle">
+                        <h5 class="footer-link-head">JobHound Links</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li class="list-unstyled-item">
+                                <a href="#" class="footer-links">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#about-us" class="footer-links">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="#interview-tips" class="footer-links">
+                                    Interview Tips
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="find-job.html" class="footer-links">
+                                    Find a Job
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item">
+                                <a href="post-job.html" class="footer-links">
+                                    Post a Job
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                   <h5 class="footer-link-head">Social Media Links</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-instagram"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-twitter"></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-google"></i>
+                                Google
+                            </a>
+                        </li>
+                        <li class="list-unstyled-item">
+                            <a href="#" class="footer-links">
+                                <i class="bi bi-youtube"></i>
+                                Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5 class="footer-link-head">Concerns?</h5>
+                    <form action="#" method="post">
+                        <input type="text" name="name" id="name" class="form-control mt-2" placeholder="Your Name" autocomplete="disabled">
+                        <input type="email" name="email" id="email" class="form-control mt-2" placeholder="Your Email" autocomplete="disabled">
+                        <textarea name="message" id="message" class="form-control mt-2" placeholder="Your Message" autocomplete="disabled"></textarea>
+                        <button type="button" class="send-message mt-3">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- JQUERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<!-- BS5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- CUSTOM JS -->
+<script src="assets/js/app.js"></script>
+</html>
+

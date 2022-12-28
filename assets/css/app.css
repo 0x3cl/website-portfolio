@@ -29,6 +29,7 @@ body {
     background-color: var(--primary-background);
 }
 
+
 .nav-link {
     color: var(--primary-text);
 }
@@ -43,6 +44,11 @@ body {
 
 #toggle-darkmode {
     color: var(--primary-text);
+}
+
+button:hover, button:focus {
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .card {

@@ -48,13 +48,11 @@ $(document).ready(function() {
         $("body").removeClass("dark-mode");
         $(".navbar-brand").html('<img src="assets/images/logo-dark.png" alt="logo" srcset="assets/images/logo-dark.png" class="w-25">');
         $("#toggle-darkmode").html("<i class='bx bx-moon'></i> Dark");
-        $("meta[name='theme-color']").attr('content', '#fff');
     }
 
     function toggleDark() {
         $("body").addClass("dark-mode");
         $(".navbar-brand").html('<img src="assets/images/logo-light.png" alt="logo" srcset="assets/images/logo-light.png" class="w-25">');
-        $("#toggle-darkmode").html("<i class='bx bx-sun' ></i> Light");    
-        $("meta[name='theme-color']").attr('content', '#191923');    
+        $("#toggle-darkmode").html("<i class='bx bx-sun' ></i> Light");        
     }
 });

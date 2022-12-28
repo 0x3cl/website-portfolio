@@ -39,8 +39,10 @@ $(document).ready(function() {
         var darkmode = localStorage.getItem("dark-mode");
         if(darkmode === "true") {
             toggleDark();
+            $("meta[name='theme-color']").attr('content', '#fff');
         } else if(darkmode === "false") {
             toggleLight();
+            $("meta[name='theme-color']").attr('content', '#191923');
         }
     }
 

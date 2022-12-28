@@ -31,7 +31,6 @@ body {
     background-color: var(--primary-background);
 }
 
-
 .nav-link {
     color: var(--primary-text);
 }
@@ -49,6 +48,7 @@ body {
 }
 
 button:hover, button:focus {
+    outline: none !important;
     border: none !important;
     box-shadow: 1px solid var(--border-primary) !important;
 }

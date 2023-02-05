@@ -1,10 +1,8 @@
 const app = require('express')
 const router = app.Router()
-const hostname = 'localhost'
-const port = process.env.PORT
 
 // base url
-const base_url = `http://${hostname}:${port}`
+const base_url = 'https://iamcarlllemos.onrender.com/'
 
 router.get('/admin/login', (req, res) => {
     res.render('admin/login', {

@@ -55,4 +55,28 @@ $(document).ready(function() {
         $(".navbar-brand").html('<img src="assets/images/logo-light.png" alt="logo" srcset="assets/images/logo-light.png" class="w-25">');
         $("#toggle-darkmode").html("<i class='bx bx-sun' ></i> Light");        
     }
+
+
+    $('#work-together .form-group .form-control').each(function(a, b) {
+
+        // input contains value
+        if($(b).val()) {
+            $($(this)).addClass('active');
+            $('#work-together .form-group label').removeClass('transition-3s');
+        }
+
+        // input has been focused
+        $(b).focus(function() {
+            $($(this)).addClass('active');
+            $('#work-together .form-group label').addClass('transition-3s');
+        });
+
+        // input has been focused out
+        $(b).blur(function() {
+            if($(this).val().length === 0) {
+                $(this).removeClass('active');   
+            }
+        })
+    })
+
 });

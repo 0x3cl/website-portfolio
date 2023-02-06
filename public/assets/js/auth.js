@@ -2,7 +2,6 @@ $(document).ready(function() {
     $('#auth-container .form-group .form-control').each(function(a, b) {
 
         // input contains value
-
         if($(b).val()) {
             $($(this)).addClass('active');
             $('#auth-container .form-group label').removeClass('transition-3s');
@@ -19,8 +18,6 @@ $(document).ready(function() {
             if($(this).val().length === 0) {
                 $(this).removeClass('active');   
             }
-        });
+        })
     })
-
-
 })

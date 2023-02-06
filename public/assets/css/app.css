@@ -1,62 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-
-* {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    user-select: none;
-    user-zoom: none;
-}
-
-:root {
-    --primary-background: #fff;
-    --secondary-background: #fff;
-    --thirtiary-background: #2f2f2f;
-    --primary-text: #2f2f2f;
-    --secondary-text: #fff;
-    --border-primary: #191923;
-}
-
-.dark-mode {
-    --primary-background: #191923;
-    --secondary-background: #36393f;
-    --thirtiary-background: #36393f;
-    --primary-text: #fff;
-    --secondary-text: #fff;
-    --border-primary: #fff;
-}
-
-body {
-    color: var(--primary-text);
-    background-color: var(--primary-background);
-}
-
-.nav-link {
-    color: var(--primary-text);
-}
-
-.nav-link:hover {
-    color: inherit;
-}
-
-.navbar-collapse.show {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.269);
-}
-
-#toggle-darkmode {
-    color: var(--primary-text);
-}
-
-button:hover, button:focus {
-    outline: none !important;
-    border: none !important;
-    box-shadow: 1px solid var(--border-primary) !important;
-}
-
-.card {
-    background-color: var(--secondary-background);
-}
-
 .scroll-top {
     position: fixed;
     right: 30px;
@@ -262,7 +203,78 @@ button:hover, button:focus {
     opacity: 0.2;
 }
 
-#home, #about, #skills, #works, #contact {
+#work-together .modal-content {
+    background-color: var(--secondary-background);
+}
+
+#work-together .form-control {
+    color: var(--primary-text);
+    height: 60px;
+    background-color: transparent !important;
+    position: relative;
+    z-index: 9;
+}
+
+#work-together textarea {
+    height: 150px !important;
+}
+
+#work-together .form-group label {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    z-index: 1;
+}
+
+#work-together #first-name.active + label {
+    position: absolute;
+    color: var(--primary-text);
+    background-color: var(--quaternary-background);
+    padding: 0 8px 0 8px;
+    font-size: 14px;
+    font-weight: 600;
+    top: -10px;
+    left: 20px;
+    z-index: 999;
+}
+
+#work-together #last-name.active + label {
+    position: absolute;
+    color: var(--primary-text);
+    background-color: var(--quaternary-background);
+    padding: 0 8px 0 8px;
+    font-size: 14px;
+    font-weight: 600;
+    top: -10px;
+    left: 20px;
+    z-index: 999;
+}
+
+#work-together #email.active + label {
+    position: absolute;
+    color: var(--primary-text);
+    background-color: var(--quaternary-background);
+    padding: 0 8px 0 8px;
+    font-size: 14px;
+    font-weight: 600;
+    top: -10px;
+    left: 20px;
+    z-index: 999;
+}
+
+#work-together #project-ideas.active + label {
+    position: absolute;
+    color: var(--primary-text);
+    background-color: var(--quaternary-background);
+    padding: 0 8px 0 8px;
+    font-size: 14px;
+    font-weight: 600;
+    top: -10px;
+    left: 20px;
+    z-index: 999;
+}
+
+#home, #about, #skills, #works, #testimonials, #contact {
     position: relative;
 }
 
@@ -404,7 +416,13 @@ button:hover, button:focus {
     width: 100%;
 }
 
-#works .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+#about .certs img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+#works .nav-pills .nav-link.active, #works.nav-pills .show> #works .nav-link {
     color: #fff !important;
     background-color: var(--thirtiary-background) !important;
 }
@@ -497,7 +515,7 @@ button:hover, button:focus {
     color: rgb(123, 123, 123);
 }
 
-#contact input, textarea {
+#contact input, #contact textarea {
     height: 60px;
     color: var(--primary-text);
     border: 2px solid var(--border-primary) !important;
@@ -527,6 +545,15 @@ button:hover, button:focus {
 
 #contact i {
     font-size: 20px;
+}
+
+#testimonials .nav-pills .nav-link.active, #testimonials .nav-pills .show>.nav-link {
+    color: var(--primary-text) !important;
+    background-color: #f4f4f4 !important;
+}
+
+#testimonials .quotes img {
+    width: 30px;
 }
 
 .footer {

@@ -50,22 +50,22 @@
                 <div class="social-links">
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#" class="nav-link d-inline d-md-block">
+                            <a href="https://www.facebook.com/idgaaaaaaaaaf" target="_blank" class="nav-link d-inline d-md-block">
                                 <i class='bx bxl-facebook' ></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link d-inline d-md-block">
+                            <a href="https://www.instagram.com/___clmz___/" target="_blank" class="nav-link d-inline d-md-block">
                                 <i class='bx bxl-instagram'></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link d-inline d-md-block">
+                            <a href="#" class="nav-link d-inline d-md-block" target="_blank">
                                 <i class='bx bxl-linkedin' ></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link d-inline d-md-block">
+                            <a href="mailto:llemoscarl671@gmail.com" class="nav-link d-inline d-md-block">
                                 <i class='bx bx-envelope' ></i>
                             </a>
                         </li>
@@ -84,7 +84,7 @@
                             stuff, write code and fulfill my path
                             to become a full stack website developer.
                         </p>
-                        <button class="btn-send-message">
+                        <button class="btn-send-message" data-bs-toggle="modal" data-bs-target="#work-together">
                             Let's Work Together <i class='bx bx-code-alt'></i>
                         </button>
                     </div>
@@ -147,6 +147,9 @@
                 </div>
                 <div class="about-me mt-4">
                     <p>I'm a self-taught web developer who spends my all day in learning and creating projects that leads me to learning. I can do front end and also back end developments. You can also call me KNOWLEDGE DIGGER.</p>
+                </div>
+                <div class="certs mt-4 mb-4">
+                    <img src="<%= base_url%>/assets/images/certificates/lavalust.png" alt="lava-lust">
                 </div>
                 <button class="btn-download-cv">Download CV <i class='bx bx-download'></i></button>
                 <div class="education mt-5">
@@ -227,7 +230,7 @@
         </div>
         <div class="row mt-5 pb-5">
             <div class="col-12 col-sm-3 mb-2">
-                <div class="card border-0 bg-transparent">
+                <div class="card border-0 bg-transparent" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).">
                     <div class="card-body text-center">
                         <i class='bx bxl-html5 bx-html'></i>
                         <h5>HTML 5</h5>
@@ -235,7 +238,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-3 mb-2">
-                <div class="card border-0 bg-transparent">
+                <div class="card border-0 bg-transparent" data-bs-toggle="tooltip" data-placement="top" title="CSS3 is used with HTML to create and format content structure. It is responsible for colours, font properties, text alignments, background images, graphics, tables, etc. It provides the positioning of various elements with the values being fixed, absolute, and relative.">
                     <div class="card-body text-center">
                         <i class='bx bxl-css3 bx-css' ></i>
                         <h5>CSS 3</h5>
@@ -243,7 +246,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-3 mb-2">
-                <div class="card border-0 bg-transparent">
+                <div class="card border-0 bg-transparent" data-bs-toggle="tooltip" data-placement="top" title="Bootstrap 5 is the newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for creating responsive, mobile-first websites. Bootstrap 5 is completely free to download and use!">
                     <div class="card-body text-center">
                         <i class='bx bxl-bootstrap bx-bs' ></i>
                         <h5>BOOTSTRAP 5</h5>
@@ -251,7 +254,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-3 mb-2">
-                <div class="card border-0 bg-transparent">
+                <div class="card border-0 bg-transparent" data-bs-toggle="tooltip" data-placement="top" title="JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.">
                     <div class="card-body text-center">
                         <i class='bx bxl-javascript bx-js'></i>
                         <h5>JAVASCRIPT</h5>
@@ -259,7 +262,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-3 mb-2">
-                <div class="card border-0 bg-transparent">
+                <div class="card border-0 bg-transparent" data-bs-toggle="tooltip" data-placement="top" title="jQuery is an open-sourced JavaScript library that simplifies creation and navigation of web applications. Specifically, jQuery simplifies HTML Document Object Model (DOM) manipulation, Asynchronous JavaScript and XML (Ajax) and event handling.">
                     <div class="card-body text-center">
                         <i class='bx bxl-jquery bx-jquery' ></i>
                         <h5>JQUERY</h5>
@@ -267,7 +270,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-3 mb-2">
-                <div class="card border-0 bg-transparent">
+                <div class="card border-0 bg-transparent" data-bs-toggle="tooltip" data-placement="top" title="PHP is a server-side scripting language created in 1995 by Rasmus Lerdorf. PHP is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.">
                     <div class="card-body text-center">
                         <i class='bx bxl-php bx-php' ></i>
                         <h5>PHP</h5>
@@ -275,7 +278,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-3 mb-2">
-                <div class="card border-0 bg-transparent">
+                <div class="card border-0 bg-transparent" data-bs-toggle="tooltip" data-placement="top" title="MySQL is an open-source relational database management system. As with other relational databases, MySQL stores data in tables made up of rows and columns. Users can define, manipulate, control, and query data using Structured Query Language, more commonly known as SQL.">
                     <div class="card-body text-center">
                         <i class='bx bx-code-block bx-ci'></i>
                         <h5>CODEIGNITER</h5>
@@ -283,7 +286,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-3 mb-2">
-                <div class="card border-0 bg-transparent">
+                <div class="card border-0 bg-transparent" data-bs-toggle="tooltip" data-placement="top" title="CodeIgniter is an application development framework, which can be used to develop websites, using PHP. It is an Open Source framework. It has a very rich set of functionality, which will increase the speed of website development work. If you know PHP well, then CodeIgniter will make your task easier.">
                     <div class="card-body text-center">
                         <i class='bx bxs-data bx-mysql'></i>
                         <h5>MYSQL</h5>
@@ -408,66 +411,168 @@
                     </div>
                 </div>
             </div>
-            </div>
-    </div>
+        </div>
     </div>
     <!-- END WORKS -->
 
+    <!-- START TESTIMONIAL -->
+
+    <div id="testimonials" class="margin-lg pt-5">
+        <div class="container">
+            <div class="section-header">
+                <h1>Testimonials</h1>
+                <p>What they say about my works</p>
+            </div>
+            <div class="overlay-header">
+                <h1>FEEDBACKS</h1>
+            </div>
+            <div class="d-flex align-items-start gap-5">
+                <div class="nav flex-column nav-pills me-3 w-25" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <div class="d-flex">
+                        <div class="tes-avatar d-flex align-items-center gap-3">
+                            <img src="<%= base_url%>/assets/images/avatars/avatar__1.png" alt="avatar" srcset="" class="w-25">
+                            <span class="avatar_name">Client 1</span>
+                        </div>
+                    </div>
+                  </button>
+                  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <div class="d-flex">
+                        <div class="tes-avatar d-flex align-items-center gap-3">
+                            <img src="<%= base_url%>/assets/images/avatars/avatar__3.png" alt="avatar" srcset="" class="w-25">
+                            <span class="avatar_name">Client 2 </span>
+                        </div>
+                    </div>
+                  </button>
+                  <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                    <div class="d-flex">
+                        <div class="tes-avatar d-flex align-items-center gap-3">
+                            <img src="<%= base_url%>/assets/images/avatars/avatar__2.png" alt="avatar" srcset="" class="w-25">
+                            <span class="avatar_name">Client 3</span>
+                        </div>
+                    </div>
+                  </button>
+                  <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <div class="d-flex">
+                        <div class="tes-avatar d-flex align-items-center gap-3">
+                            <img src="<%= base_url%>/assets/images/avatars/avatar__1.png" alt="avatar" srcset="" class="w-25">
+                            <span class="avatar_name">Client 4</span>
+                        </div>
+                    </div>
+                  </button>
+                </div>
+                <div class="tab-content w-75" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <div class="quotes">
+                        <img src="<%= base_url%>/assets/images/quote.png" alt="quote" srcset="">
+                    </div>
+                    <div class="star-rating mt-3">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <div class="testimonial-content mt-3 text-justify">
+                        <p>Functioning po ung buong website solid developer nito di kayo manghihinayang sa kung ano man ipapagawa nio 👌</p>
+                    </div>
+                    <div class="name d-flex justify-content-end mt-5 me-5">
+                        <p>- Denz B.</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="quotes">
+                            <img src="<%= base_url%>/assets/images/quote.png" alt="quote" srcset="">
+                        </div>
+                        <div class="star-rating mt-3">
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <div class="testimonial-content mt-3 text-justify">
+                            <p>Easy to talk to, quick to understand what we say. The systems he made are beautiful. He can do it right away even if there is an error.</p>
+                        </div>
+                        <div class="name d-flex justify-content-end mt-5 me-5">
+                            <p>- Rodel L.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- END TESTIMONIAL -->
+
     <!-- START CONTACTS -->
     <div id="contact" class="margin-lg pt-5">
-    <div class="container">
-        <div class="section-header">
-            <h1>CONTACT ME</h1>
-            <p></p>
-        </div>
-        <div class="overlay-header">
-            <h1>WHAT'S UP</h1>
-        </div>
-        <div class="row mt-5 pb-5 d-flex justify-content-center">
-            <div class="col-12 col-md-6 mb-5">
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Let me know you">
-                    <label for="name">Your Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" id="email" class="form-control" placeholder="What's your email?">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="How's it going?"></textarea>
-                        <label for="message">Write Message</label>
-                    </div>
-                    <button class="btn-send-message">Send Message <i class='bx bx-send'></i></button>
-                </form>
+        <div class="container">
+            <div class="section-header">
+                <h1>CONTACT ME</h1>
+                <p>Where can you find me</p>
             </div>
-            <div class="col-12 col-md-6">
-                <div class="row">
-                    <div class="col-12 col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body d-flex align-items-between gap-3">
-                                <i class='bx bx-envelope'></i> Email Me <i class='bx bx-right-arrow-alt ms-auto pt-1' ></i>
+            <div class="overlay-header">
+                <h1>WHAT'S UP</h1>
+            </div>
+            <div class="row mt-5 pb-5 d-flex justify-content-center">
+                <div class="col-12 col-md-6 mb-5">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Let me know you">
+                        <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="What's your email?">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="How's it going?"></textarea>
+                            <label for="message">Write Message</label>
+                        </div>
+                        <button class="btn-send-message">Send Message <i class='bx bx-send'></i></button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="card">
+                                <a href="mailto:llemoscarl671@gmail.com" class="nav-link" target="_blank">
+                                    <div class="card-body d-flex align-items-center gap-3">
+                                        <i class='bx bx-envelope'></i> Email Me <i class='bx bx-right-arrow-alt ms-auto pt-1' ></i>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body d-flex align-items-between gap-3">
-                                <i class='bx bxl-facebook'></i> Add Me <i class='bx bx-right-arrow-alt ms-auto pt-1' ></i>
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="card">
+                                <a href="https://www.facebook.com/idgaaaaaaaaaf/" target="_blank" class="nav-link">
+                                    <div class="card-body d-flex align-items-center gap-3">
+                                        <i class='bx bxl-facebook'></i> Add Me <i class='bx bx-right-arrow-alt ms-auto pt-1' ></i>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body d-flex align-items-between gap-3">
-                                <i class='bx bxl-instagram'></i> Follow Me <i class='bx bx-right-arrow-alt ms-auto pt-1' ></i>
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="card">
+                                <a href="https://www.instagram.com/___clmz___/" target="_blank" class="nav-link">
+                                    <div class="card-body d-flex align-items-center gap-3">
+                                        <i class='bx bxl-instagram'></i> Follow Me <i class='bx bx-right-arrow-alt ms-auto pt-1' ></i>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body d-flex align-items-between gap-3">
-                                <i class='bx bxl-linkedin' ></i> Hire Me <i class='bx bx-right-arrow-alt ms-auto pt-1' ></i>
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="card">
+                                <a href="" target="_blank" class="nav-link">
+                                    <div class="card-body d-flex align-items-center gap-3">
+                                        <i class='bx bxl-linkedin' ></i> Hire Me <i class='bx bx-right-arrow-alt ms-auto pt-1' ></i>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -475,8 +580,50 @@
             </div>
         </div>
     </div>
-</div>
-<!-- END CONTACTS -->
+    <!-- END CONTACTS -->
+
+    <!-- Work Together Modal -->
+    <div class="modal fade" id="work-together" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+            <h5 class="modal-title">What are your ideas?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="form-group">
+                            <input type="text" name="first-name" id="first-name" class="form-control" autocomplete="disabled">
+                            <label class="mb-1">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="form-group">
+                            <input type="text" name="last-name" id="last-name" class="form-control" autocomplete="disabled">
+                            <label class="mb-1">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 mb-3">
+                        <div class="form-group">
+                            <input type="text" name="email" id="email" class="form-control" autocomplete="disabled">
+                            <label class="mb-1">Email</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 mb-3">
+                        <div class="form-group">
+                            <textarea name="project-ideas" id="project-ideas" class="form-control p-3"></textarea>
+                            <label class="mb-1">Your Ideas</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+            <button type="button" class="btn btn-primary d-flex align-items-center gap-2">Send <i class='bx bx-send'></i></button>
+            </div>
+        </div>
+        </div>
+    </div>
 
 <%- include('templates/footer') %>
 

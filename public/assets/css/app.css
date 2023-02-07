@@ -595,10 +595,10 @@
         font-size: 60px !important;
     }
     #testimonials .nav {
-        width: 100%;
+        width: 100% !important;
     }
     #testimonials .tab-content {
-        width: 100%;
+        width: 100% !important;
     }
     .section-header h1 {
         font-size: 3rem;

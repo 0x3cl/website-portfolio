@@ -4,7 +4,7 @@ const router = app.Router()
 router.get('/', (req, res) => {
     res.render('index', {
         title: 'Portfolio',
-        base_url: req.protocol + '://' + req.get('host')
+        base_url: 'https://' + req.get('host')
     })
 })
 

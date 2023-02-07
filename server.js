@@ -23,6 +23,7 @@ app.use(morgan('tiny'))
 // routes
 app.get('/', require('./src/routes/index'))
 app.get('/admin/login', require('./src/routes/admin/login.js'))
+app.get('/admin/dashboard', require('./src/routes/admin/dashboard.js'))
 
 
 app.listen(port, () => {

@@ -97,6 +97,27 @@
      padding: 0 10px 0 10px;
  }
  
+#dashbord {
+    width: 100%;
+    position: relative;
+}
+
+#dashboard .sidebar {
+    width: 25%;
+    height: 100vh;
+    background-color: red;
+}
+
+#dashboard .sidebar .logo img {
+    width: 50px;
+}
+
+#dashboard .content {
+    width: 75%;
+    height: 100vh;
+    background-color: blue;
+}
+
  @media (min-width: 0px) and (max-width: 768px) { 
      #auth-container .left-panel {
          width: 100%;

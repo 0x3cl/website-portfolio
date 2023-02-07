@@ -547,6 +547,14 @@
     font-size: 20px;
 }
 
+#testimonials .nav {
+    width: 25%;
+}
+
+#testimonials .tab-content {
+    width: 75%;
+}
+
 #testimonials .nav-pills .nav-link.active, #testimonials .nav-pills .show>.nav-link {
     color: var(--primary-text) !important;
     background-color: #f4f4f4 !important;
@@ -585,6 +593,12 @@
     }
     .overlay-header h1 {
         font-size: 60px !important;
+    }
+    #testimonials .nav {
+        width: 100%;
+    }
+    #testimonials .tab-content {
+        width: 100%;
     }
     .section-header h1 {
         font-size: 3rem;

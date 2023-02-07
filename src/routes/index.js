@@ -1,10 +1,13 @@
 const app = require('express')
 const router = app.Router()
 
+// base url
+const base_url = "http://localhost:1000"
+
 router.get('/', (req, res) => {
     res.render('index', {
         title: 'Portfolio',
-        base_url: 'https://' + req.get('host')
+        base_url: base_url
     })
 })
 

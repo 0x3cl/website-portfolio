@@ -1,0 +1,33 @@
+<%- include('../templates/admin-header') %>
+
+<div id="dashboard">
+    <div class="d-flex">
+        <%- include('../templates/admin-sidebar')%>
+        <div class="content">
+            <div class="container pb-5">
+                <div class="page-title mt-5">
+                    <h1>SKILLS PAGE</h1>
+                </div>                
+                <div class="actions d-flex gap-2 mt-5 mb-4">
+                    <button class="btn btn-primary" id="add-field-skills">Add <i class='bx bx-plus'></i></button>
+                    <button class="btn btn-primary" id="add-field-skills">Reset <i class='bx bx-reset' ></i></button>
+                </div>    
+                <div class="row add-field">
+                    <div class="col-12 col-md-6 mb-4">
+                        <label class="mb-2">Skill Name</label>
+                        <input type="text" name="skill-name" id="skill-name" class="form-control" placeholder="Write Here...">
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <label class="mb-2">Skill Image</label>
+                        <input type="text" name="skill-image" id="skill-image" class="form-control" placeholder="Write Here...">
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-end mt-5">
+                    <button class="btn btn-primary p-2">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../templates/admin-footer') %>

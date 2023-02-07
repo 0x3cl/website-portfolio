@@ -1,0 +1,90 @@
+<%- include('../templates/admin-header') %>
+
+<div id="dashboard">
+    <div class="d-flex">
+        <%- include('../templates/admin-sidebar')%>
+        <div class="content">
+            <div class="container pb-5">
+                <div class="page-title mt-5">
+                    <h1>TESTIMONIAL PAGE</h1>
+                </div>
+                <div class="actions d-flex gap-2 mt-5 mb-5">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-add-testimonial">Add <i class='bx bx-plus'></i></button>
+                </div>    
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title m-0">Client Name</h5>
+                            </div>
+                            <div class="card-body">
+                                <small>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </small>
+                                <p class="text-justify mt-2">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum totam quam eligendi voluptate quas dolorem alias, repellendus suscipit temporibus inventore quidem unde quis aliquid est modi iste nam maiores sit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title m-0">Client Name</h5>
+                            </div>
+                            <div class="card-body">
+                                <small>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </small>
+                                <p class="text-justify mt-2">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum totam quam eligendi voluptate quas dolorem alias, repellendus suscipit temporibus inventore quidem unde quis aliquid est modi iste nam maiores sit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonial Modal -->
+<div class="modal fade" id="modal-add-testimonial" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+            <h5 class="modal-title">Add Testimonial</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4">
+                        <label class="mb-2">Client Name</label>
+                        <input type="text" name="client-name" id="client-name" class="form-control" placeholder="Write Here...">
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <label class="mb-2">Star Rating</label>
+                        <input type="text" name="star-rating" id="star-rating" class="form-control" placeholder="Write Here...">
+                    </div>
+                    <div class="col-12 col-md-12 mb-4">
+                        <label class="mb-2">Client Feedback</label>
+                        <textarea name="client-feedback" id="client-feedback" cols="30" rows="10" class="form-control" placeholder="Write here..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+                <button class="btn btn-primary p-2">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../templates/admin-footer') %>

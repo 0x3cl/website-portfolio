@@ -1,0 +1,56 @@
+<div class="sidebar">
+    <div class="logo d-flex justify-content-center align-items-center gap-2 mt-4">
+        <img src="/assets/images/logo-light.png" alt="logo">
+        <h4 class="m-0">Admin Panel</h4>
+    </div>
+    <div class="container">
+        <hr>
+    </div>
+    <div class="menu ms-3">
+        <label>Menu</label>
+        <ul class="list-unstyled mt-3">
+            <li class="list-unstyled-item <%= sidebar_active == 'dashboard' ? 'active' : '' %>">
+                <a href="/admin/dashboard" class="nav-link d-flex align-items-center gap-1">
+                    <i class='bx bxs-dashboard'></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="list-unstyled-item <%= sidebar_active == 'home' ? 'active' : '' %>"">
+                <a href="/admin/home" class="nav-link d-flex align-items-center gap-1">
+                    <i class='bx bx-home'></i>
+                    <span>Home Page</span>
+                </a>
+            </li>
+            <li class="list-unstyled-item <%= sidebar_active == 'about' ? 'active' : '' %>"">
+                <a href="/admin/about" class="nav-link d-flex align-items-center gap-1">
+                    <i class='bx bx-info-square'></i>
+                    <span>About Page</span>
+                </a>
+            </li>
+            <li class="list-unstyled-item <%= sidebar_active == 'skills' ? 'active' : '' %>"">
+                <a href="/admin/skills" class="nav-link d-flex align-items-center gap-1">
+                    <i class='bx bx-code-alt'></i>
+                    <span>Skills Page</span>
+                </a>
+            </li>
+            <li class="list-unstyled-item <%= sidebar_active == 'works' ? 'active' : '' %>"">
+                <a href="/admin/works" class="nav-link d-flex align-items-center gap-1">
+                    <i class='bx bx-briefcase'></i>
+                    <span>Works Page</span>
+                </a>
+            </li>
+            <li class="list-unstyled-item <%= sidebar_active == 'testimonials' ? 'active' : '' %>"">
+                <a href="/admin/testimonials" class="nav-link d-flex align-items-center gap-1">
+                    <i class='bx bx-comment-edit' ></i>
+                    <span>Testimonials</span>
+                </a>
+            </li>
+            <li class="list-unstyled-item <%= sidebar_active == 'contact' ? 'active' : '' %>"">
+                <a href="/admin/contacts" class="nav-link d-flex align-items-center gap-1">
+                    <i class='bx bxs-contact' ></i>
+                    <span>Contact Page</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

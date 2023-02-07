@@ -1,0 +1,90 @@
+<%- include('../templates/admin-header') %>
+
+<div id="dashboard">
+    <div class="d-flex">
+        <%- include('../templates/admin-sidebar')%>
+        <div class="content">
+            <div class="container pb-5">
+                <div class="page-title mt-5">
+                    <h1>WORK PAGE</h1>
+                </div>
+                <div class="actions d-flex gap-2 mt-5 mb-5">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-add-works">Add <i class='bx bx-plus'></i></button>
+                </div>    
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title m-0">Project Name</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-justify">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum totam quam eligendi voluptate quas dolorem alias, repellendus suscipit temporibus inventore quidem unde quis aliquid est modi iste nam maiores sit.
+                                </p>
+                                <button class="btn btn-primary p-2 mt-4 float-end">Open Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title m-0">Project Name</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-justify">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum totam quam eligendi voluptate quas dolorem alias, repellendus suscipit temporibus inventore quidem unde quis aliquid est modi iste nam maiores sit.
+                                </p>
+                                <button class="btn btn-primary p-2 mt-4 float-end">Open Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Work Together Modal -->
+<div class="modal modal-lg fade" id="modal-add-works" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+            <h5 class="modal-title">Add Works</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 col-md-12 mb-4">
+                        <label class="mb-2">Date Created</label>
+                        <input type="date" name="project-date" id="project-date" class="form-control">
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <label class="mb-2">Project Title</label>
+                        <input type="text" name="project-title" id="project-title" class="form-control" placeholder="Write Here...">
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <label class="mb-2">Live Preview</label>
+                        <input type="text" name="project-live" id="project-live" class="form-control" placeholder="Write Here... (Optional)">
+                    </div>
+                    <div class="col-12 col-md-12 mb-4">
+                        <label class="mb-2">Project Description</label>
+                        <textarea name="project-description" id="project-description" cols="30" rows="10" class="form-control" placeholder="Write here..."></textarea>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <label class="mb-2">Upload Prject Images</label>
+                        <div class="upload-photo">
+                            <div class="image-icon-upload">
+                                <i class='bx bxs-file-image'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+                <button class="btn btn-primary p-2">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../templates/admin-footer') %>

@@ -1,12 +1,11 @@
 const app = require('express')
 const router = app.Router()
 
-router.get('/admin/dashboard', (req, res) => {
-    res.render('admin/dashboard', {
+router.get('/admin/testimonials', (req, res) => {
+    res.render('admin/testimonials', {
         title: 'Admin Dashboard',
-        sidebar_active: 'dashboard',
+        sidebar_active: 'testimonials',
     })  
 })
-
 
 module.exports = router

@@ -20,11 +20,18 @@ app.set('views', './src/views')
 // set logs
 app.use(morgan('tiny'))
 
-// routes
+// home routes
 app.get('/', require('./src/routes/index'))
+
+// admmin routes
 app.get('/admin/login', require('./src/routes/admin/login.js'))
 app.get('/admin/dashboard', require('./src/routes/admin/dashboard.js'))
-
+app.get('/admin/home', require('./src/routes/admin/home.js'))
+app.get('/admin/about', require('./src/routes/admin/about.js'))
+app.get('/admin/skills', require('./src/routes/admin/skills.js'))
+app.get('/admin/works', require('./src/routes/admin/works.js'))
+app.get('/admin/testimonials', require('./src/routes/admin/testimonials.js'))
+app.get('/admin/contacts', require('./src/routes/admin/contact.js'))
 
 app.listen(port, () => {
     console.log('listening on port http://localhost:' + port)

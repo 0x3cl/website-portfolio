@@ -1,0 +1,49 @@
+<%- include('../templates/admin-header') %>
+
+<div id="dashboard">
+    <div class="d-flex">
+        <%- include('../templates/admin-sidebar')%>
+        <div class="content">
+            <div class="container pb-5">
+                <div class="page-title mt-5">
+                    <h1>ABOUT PAGE</h1>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-6 mb-4">
+                        <label class="mb-2">Years of Experience</label>
+                        <input type="text" name="year-experience" id="year-experience" class="form-control" placeholder="Write Here...">
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <label class="mb-2">Commissions Made</label>
+                        <input type="text" name="commissions" id="commissions" class="form-control" placeholder="Write Here...">
+                    </div>
+                    <div class="col-12 col-md-12 mb-4">
+                        <label class="mb-2">About Description</label>
+                        <textarea name="about" id="about" cols="30" rows="10" class="form-control" placeholder="Write here..."></textarea>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <label class="mb-2">Upload CV</label>
+                        <div class="upload-photo">
+                            <div class="image-icon-upload">
+                                <i class='bx bxs-file'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <label class="mb-2">Upload Certificates</label>
+                        <div class="upload-photo">
+                            <div class="image-icon-upload">
+                                <i class='bx bxs-file-image'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end mt-5">
+                        <button class="btn btn-primary p-2">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../templates/admin-footer') %>
